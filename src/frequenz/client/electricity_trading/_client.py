@@ -923,7 +923,7 @@ class Client(BaseApiClient[ElectricityTradingServiceStub]):
             ts.FromDatetime(dt)
             return ts
 
-        self.validate_params(delivery_period=delivery_period)
+        # self.validate_params(delivery_period=delivery_period)
 
         public_trade_filter = PublicTradeFilter(
             states=states,
